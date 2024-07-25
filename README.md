@@ -49,7 +49,7 @@ mv /d/llama3-8b-instruct/original_params.json /d/llama3-8b-instruct/params.json
 # compile and run the C code:
 
 ```bash
-gcc -Ofast run.c -o run
+gcc -Ofast run.c -o run -lm
 ./run.exe "llama3_8b_instruct.bin" -z "tokenizer_llama3.bin" -m chat
 ./run.exe "llama3_8b_instruct.bin" -z "../dev/tokenizer_llama3.bin" -i "Once upon a time"
 ```
